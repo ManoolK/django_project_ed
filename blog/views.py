@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from django.utils import timezone
+from .models import Post
 
 __author__ = "suvorovao"
 
 
 def posts(request):
-    return render(request, 'blog/posts.html', {})
+    published_posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/posts.html', {'posts': published_posts})
