@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+__author__ = "suvorovao"
+
+
+def posts(request):
+    return render(request, 'blog/posts.html', {})
