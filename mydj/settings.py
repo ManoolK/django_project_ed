@@ -123,5 +123,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/manoolk/mydj/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    "/blog/static",
+    "/blog/static/",
 ]
