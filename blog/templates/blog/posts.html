@@ -1,17 +1,11 @@
-<html>
-<head>
-    <title>ManoolK's Blog</title>
-</head>
-<body>
-    <div>
-        <h1><a href="/">ManoolK Blog</a></h1>
-    </div>
+{% extends 'blog/base.html' %}
+
+{% block content %}
     {% for post in posts %}
-    <div>
+    <div class="post">
         <h2><a href="">{{ post.title }}</a></h2>
-        <p>published: {{ post.published_date }}</p>
+        <div class="date"><p>published: {{ post.published_date }}</p></div>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
     {% endfor %}
-</body>
-</html>
+{% endblock %}
