@@ -5,6 +5,7 @@ from . import views
 __author__ = "suvorovao"
 
 
+app_name = 'blog'
 urlpatterns = [
     path('', views.posts, name='posts'),
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
