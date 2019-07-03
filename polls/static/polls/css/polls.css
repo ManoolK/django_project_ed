@@ -2,15 +2,44 @@
 /*
 Author:             ManoolK / SuvorovaO
 Version:            1.0
-License:            GNU General Public License v3 or later
-License URI:        http://www.gnu.org/licenses/gpl-3.0.html
+
+COLORS:
+
+Light torquoise: #01A9B2
+Medium torquoise: #005E7A
+Dark torquoise: #013162
+
+Light: #C7BACC
+Medium: #A96B70
+
 */
 
-.page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background: white url("../images/background.png")
+}
+
+.page-header {
+    background-image: linear-gradient(to right bottom, #01A9B2, #013162);
+    background-position: top;
+    background-size: cover;
+    padding: 20px 20px 20px 40px;
+    border: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserat', sans-serif;
+}
+
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited, .page-header h1 a:active {
@@ -21,10 +50,6 @@ License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 
 .content {
     margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
 }
 
 .date {
@@ -44,4 +69,8 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+}
+
+li a {
+    color: green;
 }

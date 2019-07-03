@@ -1,16 +1,23 @@
+<!DOCTYPE html>
 {% load static %}
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/polls.css' %}">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>ManoolK | Polls</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+<!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">-->
+        <link rel="stylesheet" href="{% static 'polls/css/polls.css' %}">
+    </head>
 <body>
-<div class="page-header">
+<header class="page-header">
     <h1><a href="{% url 'polls:index' %}">ManoolK Polls</a></h1>
-</div>
+</header>
 <div class="content container">
     <div class="row">
         <div class="col-md-8">
