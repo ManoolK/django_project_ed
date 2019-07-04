@@ -43,9 +43,14 @@ h1, h2, h3, h4 {
 .page-header h1,
 .page-header h1 a,
 .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+}
+
+.heading-primary a {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 6px;
 }
 
 .content {

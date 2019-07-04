@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 
-# from django.http import HttpResponse, Http404  # two variants to load views and errors
+# two variants to load views and errors
+# from django.http import HttpResponse, Http404
 # from django.template import loader
 # from django.utils.translation import gettext as _
 from django.utils import timezone
@@ -16,7 +17,10 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_question_list'
 
     def get_queryset(self):
-        """ Return the last five published questions (not including those set to be published in the future)."""
+        """
+        Return the last five published questions (not including those set
+        to be published in the future).
+        """
         return Question.objects.filter(pub_date__lte=timezone.now()).order_by('-pub_date')[:5]
 
 
@@ -66,4 +70,3 @@ def poll_vote(request, question_id):
         selected_choice.votes = F('votes') + 1
         selected_choice.save()
     return HttpResponseRedirect(reverse('polls:poll_results', args=(question.id,)))
-
