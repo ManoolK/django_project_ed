@@ -17,13 +17,15 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+Include/
+Lib/
 lib64/
 parts/
 sdist/
 var/
 wheels/
 pip-wheel-metadata/
+Scripts/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -31,6 +33,7 @@ share/python-wheels/
 MANIFEST
 .DS_Store
 /static
+tcl/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
